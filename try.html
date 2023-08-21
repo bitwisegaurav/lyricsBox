@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #outerBox{
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 500px;
+            height: 300px;
+            overflow-y: hidden;
+        }
+        
+        .innerBox {
+            font-size: 1.2rem;
+        }
+
+        #playButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        line {
+            display: block;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        line.visited {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outerBox">
+        <div class="innerBox">
+            <p id="lyrics">
+            </p>
+        </div>
+    </div>
+    <button id="playButton">Play</button>
+    <p id="para"></p>
+
+    <audio id="song"></audio>
+    <script src="data.js"></script>
+    <!-- <script src="check.js"></script> -->
+</body>
+
+</html>
